@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Rates on KokemooCreations.ca</title>
-		<link>http://localhost:1313/rates/</link>
+		<link>https://example.org/rates/</link>
 		<description>Recent content in Rates on KokemooCreations.ca</description>
 		<generator>Hugo</generator>
 		<language>en-US</language>
@@ -12,6 +12,6 @@
 		
 			<lastBuildDate></lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/rates/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="https://example.org/rates/index.xml" rel="self" type="application/rss+xml" />
 	</channel>
 </rss>

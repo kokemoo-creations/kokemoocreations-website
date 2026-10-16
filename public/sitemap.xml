@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://example.org/about/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/events/</loc>
+    <loc>https://example.org/events/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/1/</loc>
+    <loc>https://example.org/posts/1/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://example.org/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/art/</loc>
+    <loc>https://example.org/art/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/art/patches/</loc>
+    <loc>https://example.org/art/patches/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://example.org/posts/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/art/prints/</loc>
+    <loc>https://example.org/art/prints/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/rates/</loc>
+    <loc>https://example.org/rates/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/art/stickers/</loc>
+    <loc>https://example.org/art/stickers/</loc>
     <lastmod>2026-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://example.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/photography/</loc>
+    <loc>https://example.org/photography/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://example.org/tags/</loc>
   </url>
 </urlset>
