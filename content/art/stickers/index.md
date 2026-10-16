@@ -15,6 +15,4 @@ resources:
       # This one has no link, and the code will handle that gracefully
 ---
 
-Here are some pictures from the trip!
-
 {{< gallery >}}
