@@ -1,0 +1,118 @@
+<style>
+  /* --- Responsive Split Layout --- */
+
+  .post {
+    max-width: 1200px !important; 
+  }
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 3rem; /* Space between text and form */
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Switch to 2 columns on tablets and desktop */
+  @media (min-width: 800px) {
+    .contact-layout {
+      grid-template-columns: 1fr 1fr; 
+      gap: 4rem;
+    }
+  }
+
+  /* Ensures the text inherits the theme's line-height and spacing */
+  .contact-text {
+    font-family: inherit;
+  }
+
+  /* --- Form Styles --- */
+  .contour-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contour-form label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: var(--fg);
+  }
+
+  .contour-form input,
+  .contour-form textarea {
+    width: 100%;
+    padding: 14px 18px;
+    background: transparent;
+    border: 1px solid rgba(var(--fg-rgb), 0.4);
+    color: var(--fg);
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 0;
+    transition: border-color 0.2s;
+  }
+
+  .contour-form input:focus,
+  .contour-form textarea:focus {
+    outline: none;
+    border-color: var(--fg);
+  }
+
+  .contour-form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+
+  .contour-form button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    background: var(--bg);
+    color: var(--fg);
+    border: 1px solid var(--fg);
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .contour-form button:hover {
+    background: var(--fg);
+    color: var(--bg);
+  }
+</style>
+
+<div class="contact-layout">
+  <!-- Left side: The markdown text wrapped inside the shortcode -->
+  <div class="contact-text">
+    {{ .Inner | markdownify }}
+  </div>
+  
+  <!-- Right side: The form itself -->
+  <!-- Remember to keep your Formspree URL in the action attribute! -->
+  <form class="contour-form" action="YOUR_FORMSPREE_URL_HERE" method="POST">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    
+    <button type="submit">Send Message</button>
+  </form>
+</div>

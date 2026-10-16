@@ -1,0 +1,65 @@
+defaultContentLanguage = "en"
+locale = "en-US"
+title = "KokemooCreations.ca"
+theme = "contour"
+
+[taxonomies]               # Standard taxonomies. /tags/ is generated automatically.
+  tag = "tags"
+  category = "categories"
+
+[outputs]                  # Generate /index.json for the search index.
+  home = ["html", "json"]
+
+[params]
+  logoName = "Kokemoo"        # Bold part of the logo
+  logoTLD = "Creations"              # Lighter suffix shown after the logo name
+  kicker = "Cat of Many Hats - Est. 2022"
+  description = "Site description."
+  author = "Your Name"                        # author meta and JSON-LD author
+  images = ["/images/og-default.png"]         # Default share-preview image (under static/)
+  axis = "Elevation / Isoline Field - N=54"   # Map-style decorative label
+  coords = "35.6812 deg N - 139.7671 deg E"   # Initial coordinates, refreshed on click
+  showShare = true
+  showCodeCopy = false
+  showHeadingAnchors = false
+  shareNetworks = ["instagram", "twitter", "bluesky", "etsy", "youtube", "copy", "native"]
+
+[markup]
+  [markup.highlight]
+    # コードは色付けせず、テーマの罫線スタイル（モノクローム）で見せる。
+    codeFences = false
+  [markup.goldmark.renderer]
+    # 記事内で生 HTML を使えるようにする。
+    unsafe = true
+
+# Use pageRef to connect menu items to real pages.
+[[menu.main]]
+  name = "Art"
+  pageRef = "/art"
+  weight = 1
+[[menu.main]]
+  name = "Photography"
+  pageRef = "/photography"
+  weight = 2
+
+[[menu.main]]
+  name = "Events"
+  pageRef = "/events"
+  weight = 3
+  
+
+[[menu.main]]
+  name = "Posts"
+  pageRef = "/posts"
+  weight = 4
+
+
+[[menu.main]]
+  name = "About"
+  pageRef = "/about"
+  weight = 5
+
+[[menu.main]]
+  name = "Rates"
+  pageRef = "/rates"
+  weight = 6
